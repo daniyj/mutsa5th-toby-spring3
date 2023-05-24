@@ -58,12 +58,12 @@ public class UserDao {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         UserDao userDao = new UserDao();
         User user = new User();
-        user.setId("3");
+        user.setId("4");
         user.setName("kyeongrok");
         user.setPassword("1234");
         userDao.add(user);
 
-        User selectedUser = userDao.get("3");
+        User selectedUser = userDao.get("4");
         System.out.println(selectedUser.getId());
         System.out.println(selectedUser.getName());
         System.out.println(selectedUser.getPassword());
